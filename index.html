@@ -1,12 +1,86 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Show do BTS</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <h1>CAMILÃO</h1>
-    
+    <header>
+        <h1>Show do BTS</h1>
+        <p>Uma noite inesquecível com BTS ao vivo.</p>
+    </header>
+
+    <section>
+        <h2>Venha ouvir essa pedrada ao vivo - Dynamite</h2>
+
+        <iframe width="560" height="315"
+            src="https://www.youtube.com/embed/gdZLi9oWNZg"
+            title="BTS - Dynamite (Official MV)"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            referrerpolicy="strict-origin-when-cross-origin"
+            allowfullscreen>
+        </iframe>
+    </section>
+
+    <section>
+        <h2>Programação</h2>
+        <table>
+            <tr>
+                <th>Data</th>
+                <th>Cidade</th>
+                <th>Horário</th>
+            </tr>
+            <tr>
+                <td>10/01/2026</td>
+                <td>São Paulo</td>
+                <td>20:00</td>
+            </tr>
+            <tr>
+                <td>17/01/2026</td>
+                <td>Rio de Janeiro</td>
+                <td>20:00</td>
+            </tr>
+            <tr>
+                <td>24/01/2026</td>
+                <td>Curitiba</td>
+                <td>20:00</td>
+            </tr>
+        </table>
+    </section>
+
+    <section>
+        <h2>Inscreva-se</h2>
+        <form id="formInscricao">
+
+            <label>Nome:</label>
+            <input type="text" name="nome" required>
+
+            <label>Email</label>
+            <input type="email" name="email" required>
+
+            <label>Telefone</label>
+            <input type="tel" name="tel" required>
+
+            <p>Tipo de ingresso:</p>
+            <input type="radio" name="ingresso" value="pista" required> Pista
+            <input type="radio" name="ingresso" value="vip" required> VIP
+            <input type="radio" name="ingresso" value="camarote" required> Camarote
+
+            <br><br>
+
+            <input type="checkbox" name="newsletter">
+            Receber atualizações por e-mail.
+
+            <br><br>
+
+            <button type="submit">Enviar</button>
+
+        </form>
+    </section>
+
+    <script src="script.js"></script>
 </body>
 </html>
